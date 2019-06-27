@@ -9,6 +9,7 @@ for (x = 0; x <= 9; x++) {
     for (y = 0; y <= 9; y++) {
         var p = document.createElement("div");
         var t = document.createTextNode(x + "," + y);
+        p.setAttribute("class", x + " " + y);
         p.appendChild(t);
         plansza.appendChild(p);
 
