@@ -1,18 +1,15 @@
-var plansza = document.createElement("div");
-plansza.setAttribute("class", "plansza");
-document.body.appendChild(plansza);
+var board = document.createElement("div");
+board.setAttribute("class", "board");
+document.body.appendChild(board);
 
 
 
-
-for (y = 0; y <= 9; y++) {
-    for (x = 0; x <= 9; x++) {
+for (var y = 0; y < 10; y++) {
+    for (var x = 0; x < 10; x++) {
         var p = document.createElement("div");
         var t = document.createTextNode(x + "," + y);
         p.setAttribute("class", x + " " + y);
         p.appendChild(t);
-        plansza.appendChild(p);
-
+        board.appendChild(p);
     }
-
 }
