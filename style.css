@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plansza {
+    width: 320px;
+    height: 320px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+}
